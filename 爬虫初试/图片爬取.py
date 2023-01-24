@@ -7,6 +7,12 @@ if __name__ == '__main__':
     headers = {
         'User-Agent':'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36'
     }
-    img_data = requests.get(url=url,headers=headers).content
+    # proxy = 'v2us.g.ssnss.live:443'  #这里写代理的ip及端口
+    # proxies = {
+    #     'http': 'http://' + proxy,
+    #     'https': 'https://' + proxy
+    # }
+    # img_data = requests.get(url=url,headers=headers,proxies=proxies).content
+    img_data = requests.get(url=url, headers=headers).content
     with open('./img.jpg','wb') as fp:
         fp.write(img_data)
