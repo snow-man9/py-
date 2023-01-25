@@ -29,4 +29,4 @@ if __name__ == '__main__':
 
         content = div_tag.text
         fp.write(title+':'+content+'\n')
-        print(title+'爬取成功')
+        print(title+'爬取成功!')
