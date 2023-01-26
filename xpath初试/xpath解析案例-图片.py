@@ -1,5 +1,5 @@
-from lxml import etree
 import requests
+from lxml import etree
 import os
 #爬取图片
 if __name__ == '__main__':
